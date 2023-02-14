@@ -64,8 +64,11 @@ public class App extends MultiDexApplication {
         if (!Hawk.contains(HawkConfig.HOME_REC)) {
             Hawk.put(HawkConfig.HOME_REC, 2);// Home Rec 0=豆瓣, 1=推荐, 2=历史
         }; 
-        if (!Hawk.contains(HawkConfig.PLAY_TYPE)) {
-            Hawk.put(HawkConfig.PLAY_TYPE, 1);
+        if (!Hawk.contains(HawkConfig.HOME_REC)) {
+            Hawk.put(HawkConfig.HOME_SHOW_SOURCE, true);  // true=Show, false=Not show
+        };
+        if (!Hawk.contains(HawkConfig.SEARCH_VIEW)) {
+            Hawk.put(HawkConfig.SEARCH_VIEW, 2);
         }
     }
 
